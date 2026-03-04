@@ -5,7 +5,7 @@ Static single-page company profile for BETECH (Μονοπρόσωπη Ιδιωτ
 ## Stack
 
 - **HTML + CSS** — no build step, no frameworks.
-- **Netlify** — push to deploy; `netlify.toml` publishes the repo root with a no-op build.
+- **Netlify** — push to deploy; `netlify.toml` publishes the repo root (`publish = "."`).
 
 ## Local preview
 
@@ -21,7 +21,7 @@ npx serve .
 - `index.html` — main company page
 - `404.html` — not-found page (Netlify serves this automatically)
 - `styles.css` — layout and design
-- `netlify.toml` — Netlify config (publish current directory)
+- `netlify.toml` — Netlify config (publish directory: `.`, no build command)
 
 ## Deploy
 

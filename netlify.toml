@@ -1,4 +1,4 @@
-# Static site — no build; serve files from repo root
+# Static site — publish repo root (no build)
 [build]
   publish = "."
-  command = "echo 'Static site — no build'"
+  command = ""
