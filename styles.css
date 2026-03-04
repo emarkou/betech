@@ -1,0 +1,203 @@
+/* BETECH — design tokens & base */
+:root {
+  --color-bg: #f8f6f3;
+  --color-surface: #ffffff;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5c5c5c;
+  --color-accent: #0d7377;
+  --color-accent-soft: #e8f4f4;
+  --color-border: #e8e6e3;
+  --font-heading: "Fraunces", Georgia, serif;
+  --font-body: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.08);
+  --max-width: 56rem;
+  --transition: 0.2s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  padding: var(--space-md) var(--space-lg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  transition: color var(--transition);
+}
+
+.logo:hover {
+  color: var(--color-text);
+}
+
+/* Main */
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg) var(--space-3xl);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: var(--space-2xl) 0 var(--space-3xl);
+}
+
+.hero-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-sm);
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+  margin: 0 0 var(--space-md);
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  max-width: 32rem;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+/* Details grid */
+.details {
+  margin-top: var(--space-xl);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 640px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail-card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--color-border);
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.detail-card:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-accent-soft);
+}
+
+.detail-card--wide {
+  grid-column: 1 / -1;
+}
+
+.detail-card--contact {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, var(--color-accent-soft) 0%, var(--color-surface) 100%);
+  border-color: rgba(13, 115, 119, 0.2);
+}
+
+.detail-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+}
+
+.detail-value {
+  display: block;
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.detail-value--link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+  transition: color var(--transition);
+}
+
+.detail-value--link:hover {
+  color: var(--color-text);
+}
+
+/* Footer */
+.footer {
+  padding: var(--space-lg);
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-border);
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0;
+}

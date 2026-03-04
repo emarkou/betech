@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="BETECH Μονοπρόσωπη Ιδιωτική Κεφαλαιουχική Εταιρεία — Εταιρικά στοιχεία και επικοινωνία." />
+  <title>BETECH Μ.Ι.Κ.Ε.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a href="/" class="logo">BETECH</a>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <p class="hero-label">Μονοπρόσωπη Ιδιωτική Κεφαλαιουχική Εταιρεία</p>
+        <h1 class="hero-title">BETECH Μ.Ι.Κ.Ε.</h1>
+        <p class="hero-subtitle">Δραστηριότητες Μηχανικών και Συναφείς Δραστηριότητες Παροχής Τεχνικών Συμβούλων</p>
+      </section>
+
+      <section class="details" aria-label="Εταιρικά στοιχεία">
+        <div class="details-grid">
+          <article class="detail-card">
+            <span class="detail-label">ΑΦΜ</span>
+            <span class="detail-value">801680916</span>
+          </article>
+          <article class="detail-card">
+            <span class="detail-label">ΔΟΥ</span>
+            <span class="detail-value">ΚΑΛΛΙΘΕΑΣ</span>
+          </article>
+          <article class="detail-card">
+            <span class="detail-label">ΓΕΜΗ</span>
+            <span class="detail-value">161386808000</span>
+          </article>
+          <article class="detail-card">
+            <span class="detail-label">ΑΡ. ΜΗΤΡΩΟΥ</span>
+            <span class="detail-value">69282</span>
+          </article>
+          <article class="detail-card detail-card--wide">
+            <span class="detail-label">ΚΥΡ. ΚΑΔ</span>
+            <span class="detail-value">Δραστηριότητες Μηχανικών και Συναφείς Δραστηριότητες Παροχής Τεχνικών Συμβούλων</span>
+          </article>
+          <article class="detail-card detail-card--wide">
+            <span class="detail-label">ΔΕΥΤΕΡΕΥΟΝ ΚΑΔ</span>
+            <span class="detail-value">Χονδρικό Εμπόριο Άλλων Μηχανημάτων και Εξοπλισμού, Λιανικό Εμπόριο Οικιακών Συσκευών σε Εξειδικευμένα Καταστήματα</span>
+          </article>
+          <article class="detail-card">
+            <span class="detail-label">ΔΙΑΧΕΙΡΙΣΤΗΣ</span>
+            <span class="detail-value">Μπέρης Θεμιστοκλής του Χαραλάμπου</span>
+          </article>
+          <article class="detail-card detail-card--wide">
+            <span class="detail-label">ΕΤΑΙΡΙΚΟ ΚΕΦΑΛΑΙΟ</span>
+            <span class="detail-value">2.000.000 € που διαιρείται σε 100 εταιρικά μερίδια κεφαλαιουχικών εισφορών ονομαστικής αξίας 20,00 € το καθένα</span>
+          </article>
+          <article class="detail-card">
+            <span class="detail-label">ΕΤΑΙΡΟΙ</span>
+            <span class="detail-value">Μπέρης Θεμιστοκλής του Χαραλάμπου</span>
+          </article>
+          <article class="detail-card detail-card--contact">
+            <span class="detail-label">ΕΠΙΚΟΙΝΩΝΙΑ</span>
+            <a href="tel:+302109404934" class="detail-value detail-value--link">210 940 4934</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> BETECH Μ.Ι.Κ.Ε.</p>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
