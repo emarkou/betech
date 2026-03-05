@@ -60,17 +60,16 @@ body {
 }
 
 .logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-accent);
+  display: inline-block;
   text-decoration: none;
-  letter-spacing: -0.02em;
-  transition: color var(--transition);
+  line-height: 0;
 }
 
-.logo:hover {
-  color: var(--color-text);
+.logo-img {
+  display: block;
+  height: 2.5rem;
+  width: auto;
+  object-fit: contain;
 }
 
 /* Main */
@@ -86,6 +85,14 @@ body {
 .hero {
   text-align: center;
   padding: var(--space-2xl) 0 var(--space-3xl);
+}
+
+.hero-logo {
+  display: block;
+  margin: 0 auto var(--space-lg);
+  width: 7rem;
+  height: auto;
+  object-fit: contain;
 }
 
 .hero-label {
